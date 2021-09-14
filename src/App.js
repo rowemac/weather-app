@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-// import Weather from './components/weather';
+import Weather from './components/weather';
 
 
 function App() {
@@ -28,6 +28,15 @@ function App() {
 
   return (
     <div className="App">
+      { (typeof data.main != 'undefined') ? (
+        < Weather weatherData={data} />
+      ): (
+        
+        <div>
+
+        </div>
+        
+      )}
 
     </div>
   );
