@@ -29,3 +29,8 @@
     font-family: 'Recursive', sans-serif;
     font-size: 18px;
 }
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
